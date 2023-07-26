@@ -32,48 +32,35 @@
 
       <!-- nav section  -->
       <nav class="max-w-screen-xl mx-auto bg-primary-color mt-5 rounded-full text-white">
-        <div class="navbar p-5 ">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <label  class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </label>
-                <ul class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box">
-                  <li><a>Home</a></li>
-                  <li>
-                    <a>About Us</a>
-                  </li>
+        <div class="navbar">
+          <div class="navbar-start  flex-row-reverse lg:flex-row justify-between">
+            <div class="dropdown">
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52">
+                <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
                   <li><a>Shop</a></li>
-                  <li><a>All Fruits</a></li>
+                  <li><a>All fruits</a></li>
+              </ul>
+
+              <label tabindex="0" class="btn btn-ghost lg:hidden abosulute ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </label>
+              <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All fruits</a></li>
                 </ul>
               </div>
             </div>
-            
-            <div class="navbar-center hidden lg:flex ">
-              <ul class="menu menu-horizontal px-1 lg:-ml-[465px] ">
-                <li>
-                    <a>Home</a>
-                </li>
-                <li>
-                    <a>About Us</a>
-                </li>
-                <li>
-                    <a>Shop</a>
-                </li>
-                <li>
-                    <a>All Fruits</a>
-                </li>
-              </ul>
-            </div>
-            <div class="flex items-center justify-center gap-3 hidden lg:block">
-                <img class="w-10 lg:-ml-10" src="./images/logo.png" alt="">
-                <h2 class="font-bold text-2xl -mt-8 ml-2">Fruit Burst</h2>
-            </div>
-            <div class="navbar-end  relative max-w-10 flex-1">
-                <input type="search" placeholder="Search here "  class="input bg-white text-black rounded-full" />
-                <img class="w-5 absolute right-3" src="./images/search_FILL0_wght400_GRAD0_opsz48.svg" alt="">
-            </div>
+            <a class="btn btn-ghost normal-case text-xl"> <img class="w-10" src="./images/logo.png" alt="">Fruit Burst</a>
           </div>
+          <div class="navbar-end relative  hidden lg:inline-flex">
+              <input type="search" placeholder="Search here"  class="input bg-white text-black rounded-full" />
+                <img class="w-5 absolute" src="./images/search_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+          </div>
+        </div>
       </nav>
 
       <!-- hero or banner section  -->
